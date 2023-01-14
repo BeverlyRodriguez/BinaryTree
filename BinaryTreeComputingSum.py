@@ -47,3 +47,17 @@ class BinarySearchTreeNode:
                 return self.right.search(val)
             else:
                 return False
+
+    # In-order traversal
+    # Returning list of elements in specific order.
+    def in_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.in_order_traversal()
+
+        elements.append(self.data)
+
+        if self.right:
+            elements += self.right.in_order_traversal()
+
+        return elements
