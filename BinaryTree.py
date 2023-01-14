@@ -1,5 +1,5 @@
-print("\n\t\t ********PROGRAMMED BY:******** ")
-print("\t\t ***BEVERLY ANN L. RODRIGUEZ***\n ")
+print("\n\t\t\t\t\t\t********PROGRAMMED BY:******** ")
+print("\t\t\t\t\t\t***BEVERLY ANN L. RODRIGUEZ***\n ")
 
 # BINARY TREE ACTIVITY
 # Creating a demo using the letters in your fullname as the content of the binary tree.
@@ -118,6 +118,12 @@ if __name__ == '__main__':
             "L", "R", "O", "D", "R", "I", "G", "U", "E", "B"]
     name_tree = build_tree(name)
 
-    # Printing Statements
-    print 
+    # Printing Statements for Exercise 1
+    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<\n")
+    print("\t\t\t\t\t\t\t FULL NAME: \n\t\t", name)
+    print("\n\n\tMAXIMUM LETTER:\t\t",name_tree.find_max())
+    print("\tMINIMUM LETTER:\t\t",name_tree.find_min())
+    print("\tIN ORDER TRAVERSAL:\t", name_tree.in_order_traversal())
+    print("\tPRE ORFER TRAVERSAL:\t", name_tree.pre_order_traversal())
+    print("\tPOST ORDER TRAVERSAL:\t", name_tree.post_order_traversal())
 
