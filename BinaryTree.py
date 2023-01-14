@@ -115,11 +115,11 @@ def build_tree(elements):
 
 if __name__ == '__main__':
     name = ["B", "E", "V", "E", "R", "L", "Y", "A", "N", "N",
-            "L", "R", "O", "D", "R", "I", "G", "U", "E", "B"]
+            "L", "R", "O", "D", "R", "I", "G", "U", "E", "Z"]
     name_tree = build_tree(name)
 
     # Printing Statements for Exercise 1
-    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<\n")
+    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
     print("\t\t\t\t\t\t\t FULL NAME: \n\t\t", name)
     print("\n\n\tMAXIMUM LETTER:\t\t",name_tree.find_max())
     print("\tMINIMUM LETTER:\t\t",name_tree.find_min())
