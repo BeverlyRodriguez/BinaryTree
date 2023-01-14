@@ -30,3 +30,34 @@ class BinarySearchTreeNode:
                 self.right.add_child(data)
             else:
                 self.right = BinarySearchTreeNode(data)
+
+    def search(self, val):
+        if self.data == val:
+            return True
+
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+
+        if val > self.data:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False
+
+    #  In-order traversal
+    # Returning list of elements in specific order.
+    def in_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.in_order_traversal()
+
+        elements.append(self.data)
+
+        if self.right:
+            elements += self.right.in_order_traversal()
+
+        return elements
+
