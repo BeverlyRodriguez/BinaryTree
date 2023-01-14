@@ -74,6 +74,16 @@ class BinarySearchTreeNode:
         elements.append(self.data)
 
         return elements
+    
+    
+    def pre_order_traversal(self):
+        elements = [self.data]
+        if self.left:
+            elements += self.left.pre_order_traversal()
+        if self.right:
+            elements += self.right.pre_order_traversal()
+
+        return elements
 
 
 # Build Tree where 'elements' are the input.
@@ -90,5 +100,6 @@ if __name__ == '__main__':
             "L", "R", "O", "D", "R", "I", "G", "U", "E", "B"]
     name_tree = build_tree(name)
 
-
+    # Printing Statements
+    print 
 
