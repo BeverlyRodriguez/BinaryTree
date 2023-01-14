@@ -148,7 +148,7 @@ if __name__ == '__main__':
     print("\t\t\t\tMAXIMUM NUMBER:\t\t",numbers_tree.find_max())
     print("\t\t\t\tMINIMUM NUMBER:\t\t",numbers_tree.find_min())
     print("\t\t\t\tIN ORDER TRAVERSAL:\t", numbers_tree.in_order_traversal())
-    print("\t\t\t\tPRE ORFER TRAVERSAL:\t", numbers_tree.pre_order_traversal())
+    print("\t\t\t\tPRE ORDER TRAVERSAL:\t", numbers_tree.pre_order_traversal())
     print("\t\t\t\tPOST ORDER TRAVERSAL:\t", numbers_tree.post_order_traversal())
 
         
