@@ -76,7 +76,7 @@ class BinarySearchTreeNode:
         return elements
 
 
-
+# Build Tree where 'elements' are the input.
 def build_tree(elements):
     root = BinarySearchTreeNode(elements[0])
 
@@ -84,10 +84,11 @@ def build_tree(elements):
         root.add_child(elements[i])
 
     return root
+
 if __name__ == '__main__':
     name = ["B", "E", "V", "E", "R", "L", "Y", "A", "N", "N",
             "L", "R", "O", "D", "R", "I", "G", "U", "E", "B"]
     name_tree = build_tree(name)
-    
+
 
 
