@@ -47,7 +47,7 @@ class BinarySearchTreeNode:
             else:
                 return False
 
-    #  In-order traversal
+    # In-order traversal
     # Returning list of elements in specific order.
     def in_order_traversal(self):
         elements = []
@@ -58,6 +58,20 @@ class BinarySearchTreeNode:
 
         if self.right:
             elements += self.right.in_order_traversal()
+
+        return elements
+    
+    # Post Order Traversal
+    # 
+
+    def post_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.post_order_traversal()
+        if self.right:
+            elements += self.right.post_order_traversal()
+
+        elements.append(self.data)
 
         return elements
 
