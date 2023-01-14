@@ -17,7 +17,6 @@ class BinarySearchTreeNode:
         if data == self.data:
             return
 
-        
         #Goes to left subtree (if the data is < the value of current node)
         if data < self.data:
             if self.left:
@@ -31,3 +30,20 @@ class BinarySearchTreeNode:
                 self.right.add_child(data)
             else:
                 self.right = BinarySearchTreeNode(data)
+
+
+    def search(self, val):
+        if self.data == val:
+            return True
+
+        if val < self.data:
+            if self.left:
+                return self.left.search(val)
+            else:
+                return False
+
+        if val > self.data:
+            if self.right:
+                return self.right.search(val)
+            else:
+                return False
