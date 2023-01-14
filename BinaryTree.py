@@ -62,8 +62,6 @@ class BinarySearchTreeNode:
         return elements
     
     # Post Order Traversal
-    # 
-
     def post_order_traversal(self):
         elements = []
         if self.left:
@@ -75,7 +73,7 @@ class BinarySearchTreeNode:
 
         return elements
     
-    
+    # Pre Order Traversal
     def pre_order_traversal(self):
         elements = [self.data]
         if self.left:
@@ -84,6 +82,14 @@ class BinarySearchTreeNode:
             elements += self.right.pre_order_traversal()
 
         return elements
+
+    # Finding minimum element
+    def find_max(self):
+        if self.right is None:
+            return self.data
+        return self.right.find_max()
+        
+    
 
 
 # Build Tree where 'elements' are the input.
