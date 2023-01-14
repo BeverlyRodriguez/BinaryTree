@@ -138,3 +138,14 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = ["50", "30", "10", "25", "20", "35", "100", "80", "75", "65"]
     name_tree = build_tree(numbers)
+
+    
+    # Printing Statements for Exercise 1
+    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
+    print("\t\t\t\t\t\t\t FULL NAME: \n\t\t", name)
+    print("\n\n\tMAXIMUM LETTER:\t\t",name_tree.find_max())
+    print("\tMINIMUM LETTER:\t\t",name_tree.find_min())
+    print("\tIN ORDER TRAVERSAL:\t", name_tree.in_order_traversal())
+    print("\tPRE ORFER TRAVERSAL:\t", name_tree.pre_order_traversal())
+    print("\tPOST ORDER TRAVERSAL:\t", name_tree.post_order_traversal())
+    
