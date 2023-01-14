@@ -2,7 +2,9 @@ print("\n\t\t\t\t\t\t********PROGRAMMED BY:******** ")
 print("\t\t\t\t\t\t***BEVERLY ANN L. RODRIGUEZ***\n ")
 
 # BINARY TREE ACTIVITY
+# Exercise 1 and Exercise 2
 # Creating a demo using the letters in your fullname as the content of the binary tree.
+
 
 
 class BinarySearchTreeNode:
@@ -95,7 +97,7 @@ class BinarySearchTreeNode:
             return self.data
         return self.left.find_min()
 
-    # Delete (For Exercise 2)
+    # Delete Method (For Exercise 2)
     def delete(self, val):
         if val < self.data:
             if self.left:
@@ -123,9 +125,6 @@ class BinarySearchTreeNode:
         right_sum = self.right.calculate_sum() if self.right else 0
         return self.data + left_sum + right_sum
 
-    
-
-
 # Build Tree where 'elements' are the input.
 def build_tree(elements):
     root = BinarySearchTreeNode(elements[0])
@@ -148,4 +147,17 @@ if __name__ == '__main__':
     print("\tIN ORDER TRAVERSAL:\t", name_tree.in_order_traversal())
     print("\tPRE ORFER TRAVERSAL:\t", name_tree.pre_order_traversal())
     print("\tPOST ORDER TRAVERSAL:\t", name_tree.post_order_traversal())
+    
+    print("\n\t>>SEARCH<<    IS THERE A LETTER 'A' ON MY NAME? \t", name_tree.search("A"))
+    print("\t>>SEARCH<<    IS THERE A LETTER 'B' ON MY NAME? \t", name_tree.search("B"))
+    print("\t>>SEARCH<<    IS THERE A LETTER 'X' ON MY NAME? \t", name_tree.search("X"))
 
+
+    # Printing Statements for Exercise 2
+    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 2 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
+    name_tree.delete("E ")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'E' ", name_tree.in_order_traversal())
+    name_tree.delete("R")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'R' ", name_tree.in_order_traversal())
+    name_tree.delete("L")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'L' ", name_tree.in_order_traversal())
