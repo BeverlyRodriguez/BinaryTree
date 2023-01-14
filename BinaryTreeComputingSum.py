@@ -136,29 +136,29 @@ def build_tree(elements):
     return root
 
 if __name__ == '__main__':
-    numbers = [50, 30, 10, 25, 20, 35, 100, 80, 75, 65]
+    numbers = [50, 30, 10, 25, 20, 100, 80, 75, 65]
     numbers_tree = build_tree(numbers)
 
     
     # Printing Statements for Exercise 1
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
     print("\t\t\t\t\t\t\t LIST OF NUMBERS: \n\t\t\t\t\t   ", numbers)
-    print("\n\n\tTOTAL SUM:\t\t", numbers_tree.calculate_sum())
-    print("\tMAXIMUM NUMBER:\t\t",numbers_tree.find_max())
-    print("\tMINIMUM NUMBER:\t\t",numbers_tree.find_min())
-    print("\tIN ORDER TRAVERSAL:\t", numbers_tree.in_order_traversal())
-    print("\tPRE ORFER TRAVERSAL:\t", numbers_tree.pre_order_traversal())
-    print("\tPOST ORDER TRAVERSAL:\t", numbers_tree.post_order_traversal())
+    print("\n\n\t\t\t\tTOTAL SUM:\t\t", numbers_tree.calculate_sum())
+    print("\t\t\t\tMAXIMUM NUMBER:\t\t",numbers_tree.find_max())
+    print("\t\t\t\tMINIMUM NUMBER:\t\t",numbers_tree.find_min())
+    print("\t\t\t\tIN ORDER TRAVERSAL:\t", numbers_tree.in_order_traversal())
+    print("\t\t\t\tPRE ORFER TRAVERSAL:\t", numbers_tree.pre_order_traversal())
+    print("\t\t\t\tPOST ORDER TRAVERSAL:\t", numbers_tree.post_order_traversal())
 
 
     # Printing Statements for Exercise 2
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 2 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
-    numbers_tree.delete("E")
-    print("\tIN ORDER TRAVERSAL AFTER DELETING 'E' ", numbers_tree.in_order_traversal())
-    numbers_tree.delete("R")
-    print("\tIN ORDER TRAVERSAL AFTER DELETING 'R' ", numbers_tree.in_order_traversal())
-    numbers_tree.delete("Z")
-    print("\tIN ORDER TRAVERSAL AFTER DELETING 'Z' ", numbers_tree.in_order_traversal())
+    numbers_tree.delete(20)
+    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '20':\t", numbers_tree.in_order_traversal())
+    numbers_tree.delete(50)
+    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '50':\t", numbers_tree.in_order_traversal())
+    numbers_tree.delete(100)
+    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '100:\t", numbers_tree.in_order_traversal())
 
 
     
