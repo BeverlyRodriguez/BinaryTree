@@ -142,9 +142,9 @@ if __name__ == '__main__':
     
     # Printing Statements for Exercise 1
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
-    print("\t\t\t\t\t\t\t FULL NAME: \n\t\t", name)
-    print("\n\n\tMAXIMUM LETTER:\t\t",name_tree.find_max())
-    print("\tMINIMUM LETTER:\t\t",name_tree.find_min())
+    print("\t\t\t\t\t\t\t FULL NAME: \n\t\t", numbers)
+    print("\n\n\tMAXIMUM NUMBER:\t\t",name_tree.find_max())
+    print("\tMINIMUM NUMBER:\t\t",name_tree.find_min())
     print("\tIN ORDER TRAVERSAL:\t", name_tree.in_order_traversal())
     print("\tPRE ORFER TRAVERSAL:\t", name_tree.pre_order_traversal())
     print("\tPOST ORDER TRAVERSAL:\t", name_tree.post_order_traversal())
