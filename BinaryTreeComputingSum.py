@@ -151,4 +151,14 @@ if __name__ == '__main__':
     print("\tPOST ORDER TRAVERSAL:\t", numbers_tree.post_order_traversal())
 
 
+    # Printing Statements for Exercise 2
+    print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 2 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
+    numbers_tree.delete("E")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'E' ", numbers_tree.in_order_traversal())
+    numbers_tree.delete("R")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'R' ", numbers_tree.in_order_traversal())
+    numbers_tree.delete("Z")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'Z' ", numbers_tree.in_order_traversal())
+
+
     
