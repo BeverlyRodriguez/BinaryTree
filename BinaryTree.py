@@ -6,6 +6,8 @@ print("\t\t\t\t\t\t***BEVERLY ANN L. RODRIGUEZ***\n ")
 # Creating a demo using the letters in your fullname as the content of the binary tree.
  
 
+
+
 class BinarySearchTreeNode:
     def __init__(self, data):
         self.data = data
@@ -144,7 +146,7 @@ if __name__ == '__main__':
     print("\n\n\tMAXIMUM LETTER:\t\t",name_tree.find_max())
     print("\tMINIMUM LETTER:\t\t",name_tree.find_min())
     print("\tIN ORDER TRAVERSAL:\t", name_tree.in_order_traversal())
-    print("\tPRE ORFER TRAVERSAL:\t", name_tree.pre_order_traversal())
+    print("\tPRE ORDER TRAVERSAL:\t", name_tree.pre_order_traversal())
     print("\tPOST ORDER TRAVERSAL:\t", name_tree.post_order_traversal())
     
     print("\n\t>>SEARCH<<    IS THERE A LETTER 'A' ON MY NAME? \t", name_tree.search("A"))
