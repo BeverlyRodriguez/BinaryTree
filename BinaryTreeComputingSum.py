@@ -134,3 +134,7 @@ def build_tree(elements):
         root.add_child(elements[i])
 
     return root
+
+if __name__ == '__main__':
+    numbers = ["50", "30", "10", "25", "20", "35", "100", "80", "75", "65"]
+    name_tree = build_tree(numbers)
