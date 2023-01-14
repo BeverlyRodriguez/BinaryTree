@@ -4,8 +4,7 @@ print("\t\t\t\t\t\t***BEVERLY ANN L. RODRIGUEZ***\n ")
 # BINARY TREE ACTIVITY
 # Exercise 1 and Exercise 2
 # Creating a demo using the letters in your fullname as the content of the binary tree.
-
-
+ 
 
 class BinarySearchTreeNode:
     def __init__(self, data):
@@ -155,9 +154,13 @@ if __name__ == '__main__':
 
     # Printing Statements for Exercise 2
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 2 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
-    name_tree.delete("E ")
+    name_tree.delete("E")
     print("\tIN ORDER TRAVERSAL AFTER DELETING 'E' ", name_tree.in_order_traversal())
     name_tree.delete("R")
     print("\tIN ORDER TRAVERSAL AFTER DELETING 'R' ", name_tree.in_order_traversal())
-    name_tree.delete("L")
-    print("\tIN ORDER TRAVERSAL AFTER DELETING 'L' ", name_tree.in_order_traversal())
+    name_tree.delete("Z")
+    print("\tIN ORDER TRAVERSAL AFTER DELETING 'Z' ", name_tree.in_order_traversal())
+
+
+# Since the elements are letters, the SUM METHOD cannot be apply.
+# There is another program for CALCULATING SUM.
