@@ -142,7 +142,7 @@ if __name__ == '__main__':
     
     # Printing Statements for Exercise 1
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 1 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
-    print("\t\t\t\t\t\t\t LIST OF NUMBERS: \n\t\t\t\t\t   ", numbers)
+    print("\t\t\t\t\t\t\t LIST OF NUMBERS: \n\t\t\t\t\t     ", numbers)
     print("\n\n\t\t\t\tTOTAL SUM:\t\t", numbers_tree.calculate_sum())
     print("\t\t\t\tMAXIMUM NUMBER:\t\t",numbers_tree.find_max())
     print("\t\t\t\tMINIMUM NUMBER:\t\t",numbers_tree.find_min())
@@ -150,15 +150,20 @@ if __name__ == '__main__':
     print("\t\t\t\tPRE ORFER TRAVERSAL:\t", numbers_tree.pre_order_traversal())
     print("\t\t\t\tPOST ORDER TRAVERSAL:\t", numbers_tree.post_order_traversal())
 
+        
+    print("\n\t\t\t\t>>SEARCH<<    IS THERE A NUMBER '20' ON THE LIST? \t", numbers_tree.search(20))
+    print("\t\t\t\t>>SEARCH<<    IS THERE A NUMBER '50' ON THE LIST? \t", numbers_tree.search(50))
+    print("\t\t\t\t>>SEARCH<<    IS THERE A NUMBERS '120' ON THE LIST? \t", numbers_tree.search(120))
+
+
 
     # Printing Statements for Exercise 2
     print("\n\t\t\t\t>>>>>>>>>>>>>>>>>>>>>>>>> EXERCISE 2 <<<<<<<<<<<<<<<<<<<<<<<<<\n")
+    numbers_tree.delete(10)
+    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '10':\t", numbers_tree.in_order_traversal())
     numbers_tree.delete(20)
     print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '20':\t", numbers_tree.in_order_traversal())
-    numbers_tree.delete(50)
-    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '50':\t", numbers_tree.in_order_traversal())
-    numbers_tree.delete(100)
-    print("\t\t\t\tIN ORDER TRAVERSAL AFTER DELETING '100:\t", numbers_tree.in_order_traversal())
+
 
 
     
